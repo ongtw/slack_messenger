@@ -1,0 +1,8 @@
+.open api_keys.db
+
+create table info (
+    username text primary key unique,
+    hashed_api_key text not null,
+    date_created datetime default current_timestamp,
+    date_updated datetime default current_timestamp
+);
