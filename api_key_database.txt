@@ -6,3 +6,18 @@ create table info (
     date_created datetime default current_timestamp,
     date_updated datetime default current_timestamp
 );
+
+create table authorized_users (
+    username text primary key unique,
+    email text not null,
+    date_created datetime default current_timestamp,
+    date_updated datetime default current_timestamp
+);
+
+insert into authorized_users (username, email) values ("David", "davidong@aisingapore.org");
+insert into authorized_users (username, email) values ("Yier", "yier@aisingapore.org");
+insert into authorized_users (username, email) values ("ChoonMeng", "choonmeng@aisingapore.org");
+insert into authorized_users (username, email) values ("Hongnan", "hongnan@aisingapore.org");
+insert into authorized_users (username, email) values ("Jinhowe", "jinhowe@aisingapore.org");
+insert into authorized_users (username, email) values ("Raymond", "raymond@aisingapore.org");
+insert into authorized_users (username, email) values ("Ngan", "ngan@aisingapore.org");
